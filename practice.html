@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>dogAge to humanAge formular</H1>
+    <script>
+        let dogAge = Number(prompt("How old is your dog"))
+        let humanAge = (dogAge - 2)*4 + 21
+        confirm(`Your dog is ${humanAge}, year old now in human years`)
+
+       // capitalising the first latter of a user name, in python we use .title() method
+        let userName = prompt("What is your name")
+        let firstLetter = userName.slice(0,1)
+        let uppercaseFirstLetter = firstLetter.toUpperCase()
+        let restLetter = userName.slice(1,userName.length)
+        let lowercaseRestletter = restLetter.toLocaleLowerCase()
+        let supportedName =uppercaseFirstLetter + lowercaseRestletter
+        alert("Welcome to my team " +  supportedName + " !")
+
+        // length of latters contained on a string
+        let name ="abas"
+        console.log(name.length)
+        
+        // string slicing
+        console.log(name.slice(0,2))
+
+        // string slicing on next line to cut down user's iinput that is past the no require no. of our specified character
+        console.log(name.slice(0,9))
+
+        // changing string to uppercase or lowercase
+        console.log(name.toUpperCase())
+        console.log(name.toLowerCase())
+        n1 = name.slice(0,1)
+        n2 = n1.toUpperCase()
+        n3 = name.slice(1,4)
+        console.log(n2 + n3)
+
+    </script>
+</body>
+</html>
